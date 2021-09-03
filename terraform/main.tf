@@ -1,5 +1,6 @@
 terraform {
   backend "azurerm" {
+
   }
 }
 
@@ -78,3 +79,4 @@ resource "azurerm_databricks_workspace" "bdcc" {
     env = var.ENV
   }
 }
+

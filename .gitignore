@@ -4,6 +4,10 @@
 # idea
 /.idea
 /target
+/notebooks
+/spark-warehouse
+/terraform/.terraform/
+/terraform/.terraform.lock.hcl
 *.iml
 
 ### Mac ###

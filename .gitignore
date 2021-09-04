@@ -8,6 +8,7 @@
 /spark-warehouse
 /terraform/.terraform/
 /terraform/.terraform.lock.hcl
+/src/main/resources/application.properties
 *.iml
 
 ### Mac ###

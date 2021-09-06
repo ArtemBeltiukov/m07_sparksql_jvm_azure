@@ -1,3 +1,5 @@
+Notebook: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3434544809674006/4237955931063204/4158731053528304/latest.html
+
 Top 10 hotels with max absolute temperature difference by month.
 
 ![img.png](img.png)

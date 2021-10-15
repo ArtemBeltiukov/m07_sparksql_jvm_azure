@@ -31,14 +31,14 @@ public class Main {
         ss.sql("create table expedia using delta location \"/mnt/expedia\"");
         ss.sql("create table hotel_weather using delta location \"/mnt/hotel_weather\"");
 
-        Dataset<Row> firstQuery = ss.sql("select address, max(diff) as diff\n" +
+        Dataset<Row> firstQuery = ss.sql("select id, address, max(diff) as diff\n" +
                 "from(\n" +
                 "select max(avg_tmpr_c) - min(avg_tmpr_c) as diff,\n" +
-                "address\n" +
+                "id, address\n" +
                 "from hotel_weather\n" +
-                "group by month, address\n" +
+                "group by month, id, address\n" +
                 ")\n" +
-                "group by address\n" +
+                "group by id, address\n" +
                 "order by diff desc\n" +
                 "limit 10");
         firstQuery.show();
